@@ -12,4 +12,4 @@ _Ansvarsområdene under skal følges opp med kunde-perspektiv av teamet:_
 - Tjenestenivåstyring (SLA)
 
 ## Kontaktperson
-Ved spørsmål, kontakt team lead Torkel Buarøy eller den/de som er assignet i teamets Kanban-board.
+Ved spørsmål, kontakt team lead Torkel Buarøy eller den/de som er assignet på den enkelte issue.
