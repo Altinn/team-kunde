@@ -6,7 +6,6 @@ body:
     attributes:
       value: |
         Legg inn en kort beskrivende tittel av ønsket endring i 'Tittel' feltet over. Vennligst  sjekk at det ikke allerede finnes en åpen eller lukket sak før du registrerer en ny.
-      placeholder: Live-oppdatering når sak tas i arbeid
 
   - type: textarea
     id: description
