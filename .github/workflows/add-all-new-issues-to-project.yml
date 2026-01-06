@@ -9,7 +9,7 @@ jobs:
     name: Add issue to 'Team Kunde' project 121
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@RELEASE_VERSION
+      - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/orgs/Altinn/projects/121
           gh_token: ${{ secrets.GITHUB_TOKEN }}
