@@ -13,7 +13,7 @@ env:
 jobs:
   add-to-project-servicedesk:
     name: Add issue to 'Servicedesk' project
-    if: ${{ (!contains( github.event.issue.labels.*.name, 'CRM')) }}
+    #if: ${{ (!contains( github.event.issue.labels.*.name, 'CRM')) }}
     #runs-on: altinn-support-runner
     runs-on: ubuntu-latest
     steps:
