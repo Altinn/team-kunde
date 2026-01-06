@@ -22,4 +22,4 @@ jobs:
           organization: ${{ env.repository_owner }}
           project_id: ${{ env.project_id_team_kunde }}
           resource_node_id: ${{ github.event.issue.node_id }}
-          status_value: 'Todo' # Target status
+          #status_value: 'Todo' # Target status
