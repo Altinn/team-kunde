@@ -11,7 +11,7 @@ body:
     id: description
     attributes:
       label: Beskrivelse/bakgrunn
-      description: Gi en kort beskrivelse av hvorfor du ønsker denne endringen
+      description: Gi en kort beskrivelse av hva du ønsker endret og hvorfor du ønsker endringen
       placeholder: Flere brukere opplever at det er vanskelig å vite om en sak allerede er tatt av noen andre.
     validations:
       required: true
