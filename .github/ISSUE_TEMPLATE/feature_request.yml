@@ -12,7 +12,7 @@ body:
     attributes:
       label: Beskrivelse/bakgrunn
       description: Gi en kort beskrivelse av hvorfor du ønsker denne endringen
-      placeholder: *Flere brukere opplever at det er vanskelig å vite om en sak allerede er tatt av noen andre.*
+      placeholder: Flere brukere opplever at det er vanskelig å vite om en sak allerede er tatt av noen andre.
     validations:
       required: true
 
@@ -21,7 +21,7 @@ body:
     attributes:
       label: Forslag til endring
       description: Hvordan mener du dette kan løses?
-      placeholder: *Når en saksbehandler åpner og lagrer en sak, skal andre som har samme sak åpen få et varsel om at den er tatt.*
+      placeholder: Når en saksbehandler åpner og lagrer en sak, skal andre som har samme sak åpen få et varsel om at den er tatt.
     validations:
       required: true
 
@@ -30,4 +30,4 @@ body:
     attributes:
       label: Mål
       description: Hvilke gevinster vil endringen gi?
-      placeholder: *Redusere dobbeltarbeid og sikre tydelig eierskap til saken.*
+      placeholder: Redusere dobbeltarbeid og sikre tydelig eierskap til saken.
