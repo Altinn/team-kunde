@@ -1,27 +1,17 @@
-name: Legg alle nye saker med label 'CRM' til 'Team Kunde' prosjekt
+name: Legg alle nye saker i repository til 'Team Kunde' prosjekt
 on:
   issues:
     types:
       - opened
-  workflow_dispatch:
-
-env:
-  # ADD_TO_PROJECT_PAT finnes i både TEST og PROD
-  repository_owner: $GITHUB_REPOSITORY_OWNER
-  project_id_team_kunde: 121
 
 jobs:
-  add-to-project-servicedesk:
-    name: Add issue to 'Servicedesk' project
-    #if: ${{ (!contains( github.event.issue.labels.*.name, 'CRM')) }}
-    #runs-on: altinn-support-runner
+  add-to-project-team-kunde:
+    name: Add issue to 'Team Kunde' project 121
     runs-on: ubuntu-latest
     steps:
-      - name: Move new issue to 'Todo' column in Team Kunde project
-        uses: leonsteinhaeuser/project-beta-automations@v2.2.1
+      - uses: actions/add-to-project@RELEASE_VERSION
         with:
+          project-url: https://github.com/orgs/Altinn/projects/121
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           organization: ${{ env.repository_owner }}
           project_id: ${{ env.project_id_team_kunde }}
-          resource_node_id: ${{ github.event.issue.node_id }}
-          #status_value: 'Todo' # Target status
