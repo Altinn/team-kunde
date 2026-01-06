@@ -31,3 +31,5 @@ body:
       label: Mål
       description: Hvilke gevinster vil endringen gi?
       placeholder: Redusere dobbeltarbeid og sikre tydelig eierskap til saken.
+    validations:
+      required: true
