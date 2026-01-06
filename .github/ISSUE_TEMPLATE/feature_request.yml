@@ -1,6 +1,5 @@
 name: Endringsønske eller behov i CRM ✨
 description: Registrer ønske eller behov for endring i Dynamics CRM
-title: Tittel som beskriver endringsønske
 labels: ["CRM", "CRM/request"]
 body:
   - type: markdown
