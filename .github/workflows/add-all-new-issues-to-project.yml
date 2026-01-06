@@ -12,6 +12,4 @@ jobs:
       - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/orgs/Altinn/projects/121
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
-          organization: ${{ env.repository_owner }}
-          project_id: ${{ env.project_id_team_kunde }}
+          gh_token: ${{ secrets.ADD_TO_PROJECT_PAT }}
