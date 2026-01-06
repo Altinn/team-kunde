@@ -1,0 +1,33 @@
+name: Endringsønske eller behov i CRM ✨
+description: Registrer ønske eller behov for endring i Dynamics CRM
+labels: ["CRM", "CRM/request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Legg inn en kort beskrivende tittel på hva problemet er i 'Tittel' feltet over. Vennligst  sjekk at det ikke allerede finnes en åpen eller lukket sak før du registrerer en ny.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Beskrivelse/bakgrunn:
+      description: Gi en kort beskrivelse av hvorfor du ønsker denne endringen
+      placeholder: *Flere brukere opplever at det er vanskelig å vite om en sak allerede er tatt av noen andre.*
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Forslag til endring:
+      description: Hvordan mener du dette kan løses?
+      placeholder: *Når en saksbehandler åpner og lagrer en sak, skal andre som har samme sak åpen få et varsel om at den er tatt.*
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Mål:
+      description: Hvilke gevinster vil endringen gi?
+      placeholder: *Redusere dobbeltarbeid og sikre tydelig eierskap til saken.*
