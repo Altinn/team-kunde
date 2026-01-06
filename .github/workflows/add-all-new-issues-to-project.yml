@@ -12,8 +12,9 @@ env:
 jobs:
   add-to-project-servicedesk:
     name: Add issue to 'Servicedesk' project
-    #if: ${{ (!contains( github.event.issue.labels.*.name, 'CRM')) }}
-    runs-on: altinn-support-runner
+    if: ${{ (!contains( github.event.issue.labels.*.name, 'CRM')) }}
+    #runs-on: altinn-support-runner
+    runs-on: ubuntu-latest
     steps:
       - name: Move new issue to 'Todo' column in Team Kunde project
         uses: leonsteinhaeuser/project-beta-automations@v2.2.1
